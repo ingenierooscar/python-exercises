@@ -15,4 +15,5 @@ def revertir(pal):
     return texto_al_reves
 
 
+# just to check modification date
 print(palindomo("aeiou"))
