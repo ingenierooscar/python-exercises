@@ -1,10 +1,9 @@
 d = {1: 2, 3: 4, 4: 3, 2: 1, 0: 0}
 
+#using sort method and lambda to start for the second value of the key 
 print(f"descending: {sorted(d.items(), key=lambda x: x[1], reverse=True)}")
 print(f"ascending: {sorted(d.items(), key=lambda x: x[0])}")
 print(f"hi {sorted(d.items(), key=lambda x: x[1])}")
-
-#using sort method and lambda to start for the second value of the key 
 
 #how to print the value of the key
 print(d[1])
@@ -32,15 +31,16 @@ print(d)
 d["z"] = 100
 
 #checks all keys
-for valor in d:
-    print(valor)
+for llave in d:
+    print(llave)
 
 #checks values
-for valor in d:
-    print(d[valor])
+for llave in d:
+    print(d[llave])
 
+#trae todo en tuplas
 for valor in d.items():
-    print(valor)  
+    print("este es", valor)  
 
 #key and values
 for llave, valor in d.items():
